@@ -160,3 +160,26 @@ body {
   border-color: #136f2c;
   background-color: #072814;
 }
+
+
+.foursections {
+    margin-top: 2vw;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.section {
+    margin:  0 0.5vw 0 0 ;
+    border:  1px solid #062e16;
+    border-radius: 8px;
+    border-left-color: yellow;
+    padding: 5vh 9vw 5vh 9vw;
+    
+}
+
+
+.section:hover {
+    border-color: #136f2c;
+    background-color: #072814;
+}
