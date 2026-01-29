@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.allpage {
+  background-color: #0b0b0f;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.navbar {
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #05050a;
+  display: flex;
+  box-shadow: 0 0.1rem #1b2329;
+  justify-content: space-between;
+}
+
+.navbar > .divinnavbar {
+  color: #1f953e;
+}
+
+.logo {
+  block-size: 20px;
+}
+
+.rightside {
+  padding: 0.5rem;
+  border: 2px solid green;
+  background-color: #072814;
+  border-radius: 10px;
+}
