@@ -37,3 +37,80 @@ body {
   background-color: #072814;
   border-radius: 10px;
 }
+
+.headerofwheel {
+  margin: 2rem;
+  min-height: 35vh;
+  border: 4px solid #13151d;
+  text-align: center;
+}
+
+.radar,
+.sweep {
+  position: absolute;
+}
+.radar {
+  overflow: hidden;
+  margin: 2rem 0 0 2rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  background:
+    repeating-radial-gradient(
+      transparent 0 23px,
+      #287a33 24px 26px,
+      #0000 27px
+    ),
+    linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50%
+      no-repeat,
+    linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0)
+      50% no-repeat,
+    linear-gradient(#333, #111);
+  background-size:
+    100%,
+    218px 218px,
+    218px 218px,
+    100%;
+}
+.sweep {
+  box-sizing: border-box;
+  top: 16px;
+  left: 16px;
+  border-right: solid 1px hsla(145, 50%, 40%, 0.3);
+  width: 108px;
+  height: 108px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(
+    50deg,
+    rgba(34, 34, 34, 0) 56%,
+    hsla(145, 50%, 40%, 1)
+  );
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.headerart {
+  margin-top: 10vh;
+  margin-left: 70vh;
+}
+
+.numberinarticle {
+  margin-top: 2vw;
+  margin-left: -5vw;
+  color: green;
+}
+
+.pinarticle {
+  color: #44404d;
+}
